@@ -3,82 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Alba Studio Textil</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fff;
-    color:#111;
+font-family:Arial, Helvetica, sans-serif;
+background:white;
+color:#111;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+text-align:center;
 }
 
-h1{
-    font-size:clamp(60px,10vw,120px);
-    font-weight:900;
-    line-height:1;
+.logo{
+width:min(650px,90%);
+margin-bottom:20px;
 }
 
 .subtitulo{
-    margin-top:25px;
-    letter-spacing:8px;
-    font-size:18px;
-    font-weight:bold;
+font-size:22px;
+letter-spacing:8px;
+font-weight:600;
+margin-bottom:8px;
 }
 
 .est{
-    margin-top:10px;
-    letter-spacing:4px;
-    font-size:16px;
+letter-spacing:4px;
+font-size:16px;
+margin-bottom:50px;
 }
 
 .boton{
-    margin-top:60px;
-    display:inline-block;
-    padding:18px 45px;
-    border:2px solid #111;
-    border-radius:40px;
-    text-decoration:none;
-    color:#111;
-    font-weight:bold;
-    letter-spacing:2px;
-    transition:.3s;
+display:inline-block;
+padding:18px 45px;
+border:2px solid #111;
+border-radius:40px;
+text-decoration:none;
+color:#111;
+font-weight:700;
+letter-spacing:3px;
+transition:.3s;
 }
 
 .boton:hover{
-    background:#111;
-    color:white;
+background:#111;
+color:white;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <section class="hero">
 
-<h1>Alba</h1>
+<img src="logo.png" class="logo" alt="Alba Studio Textil">
 
 <p class="subtitulo">DESIGN &amp; SEWING</p>
 
-<p class="est">- EST 2026 -</p>
+<p class="est">– EST 2026 –</p>
 
-<a class="boton" href="#">VER COLECCIÓN</a>
+<a href="#coleccion" class="boton">
+VER COLECCIÓN
+</a>
+
+</section>
+
+<section id="coleccion" style="padding:80px 20px;text-align:center;">
+<h2 style="font-size:38px;margin-bottom:15px;">Próximamente</h2>
+
+<p style="font-size:18px;color:#666;">
+Muy pronto encontrarás aquí nuestros neceseres, scrunchies y accesorios.
+</p>
 
 </section>
 
