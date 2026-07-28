@@ -1,50 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alba Studio Textil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alba Studio Textil</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f3ed;
-      color: #3e3833;
-      text-align: center;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    header {
-      padding: 100px 20px;
-    }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#111;
+}
 
-    h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-    }
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
 
-    p {
-      font-size: 21px;
-      color: #6d655f;
-    }
+h1{
+    font-size:clamp(60px,10vw,120px);
+    font-weight:900;
+    line-height:1;
+}
 
-    a {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 34px;
-      background: #3e3833;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-    }
-  </style>
+.subtitulo{
+    margin-top:25px;
+    letter-spacing:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.est{
+    margin-top:10px;
+    letter-spacing:4px;
+    font-size:16px;
+}
+
+.boton{
+    margin-top:60px;
+    display:inline-block;
+    padding:18px 45px;
+    border:2px solid #111;
+    border-radius:40px;
+    text-decoration:none;
+    color:#111;
+    font-weight:bold;
+    letter-spacing:2px;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#111;
+    color:white;
+}
+</style>
+
 </head>
 
 <body>
-  <header>
-    <h1>Alba Studio Textil</h1>
-    <p>Complementa tu día ✨</p>
-    <a href="#">Tienda en construcción</a>
-  </header>
+
+<section class="hero">
+
+<h1>Alba</h1>
+
+<p class="subtitulo">DESIGN &amp; SEWING</p>
+
+<p class="est">- EST 2026 -</p>
+
+<a class="boton" href="#">VER COLECCIÓN</a>
+
+</section>
+
 </body>
 </html>
