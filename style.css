@@ -1,3 +1,7 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +20,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -28,17 +33,19 @@ button {
   font: inherit;
 }
 
-/* Encabezado */
+/* ================================
+   ENCABEZADO
+================================ */
 
 .encabezado {
   width: 100%;
-  height: 90px;
+  height: 82px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
   border-bottom: 1px solid #eeeeee;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.96);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -53,7 +60,7 @@ button {
 .menu {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 36px;
 }
 
 .menu a {
@@ -61,6 +68,7 @@ button {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: opacity 0.25s ease;
 }
 
 .menu a:hover {
@@ -90,46 +98,58 @@ button {
   align-items: center;
 }
 
-/* Portada */
+/* ================================
+   PORTADA
+================================ */
 
 .portada {
-  min-height: calc(100vh - 78px);
-  padding: 70px 20px;
+  min-height: auto;
+  padding: 42px 20px 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
 }
 
 .logo-principal {
-  width: min(620px, 85vw);
+  width: min(620px, 88vw);
   height: auto;
-  margin: 0 auto 5 px;
   display: block;
+  margin: 0 auto 10px;
 }
 
 .boton-principal {
   display: inline-block;
-  padding: 14px 30px;
+  padding: 13px 30px;
   border: 1.5px solid #111111;
   border-radius: 999px;
   color: #111111;
-  text-decoration: none;
+  background: transparent;
+  font-size: 13px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .boton-principal:hover {
   color: #ffffff;
   background: #111111;
+  transform: translateY(-2px);
 }
 
-/* Colección */
+/* ================================
+   COLECCIONES
+================================ */
 
 .coleccion {
-  padding: 90px 5%;
+  padding: 80px 5%;
   text-align: center;
 }
 
@@ -142,8 +162,8 @@ button {
 }
 
 .titulo-seccion {
-  max-width: 600px;
-  margin: 0 auto 50px;
+  max-width: 650px;
+  margin: 0 auto 45px;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(32px, 5vw, 50px);
   font-weight: 400;
@@ -152,10 +172,10 @@ button {
 
 .categorias {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
 }
 
 .categoria {
@@ -167,6 +187,21 @@ button {
   justify-content: flex-end;
   text-align: left;
   background: #f7f7f5;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.categoria:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.categoria img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  margin-bottom: 24px;
 }
 
 .categoria h3 {
@@ -177,26 +212,77 @@ button {
 }
 
 .categoria p {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   color: #555555;
   font-size: 14px;
   line-height: 1.6;
 }
 
 .categoria a {
+  width: fit-content;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #111111;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-/* Beneficios */
+/* ================================
+   SOBRE ALBA
+================================ */
+
+.sobre-alba {
+  padding: 85px 5%;
+  background: #f7f5f2;
+}
+
+.sobre-contenido {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sobre-imagen img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.sobre-texto h2 {
+  margin-bottom: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 5vw, 52px);
+  font-weight: 400;
+}
+
+.sobre-texto p {
+  margin-bottom: 18px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.firma-maca {
+  margin-top: 25px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* ================================
+   BENEFICIOS
+================================ */
 
 .beneficios {
-  padding: 60px 5%;
+  padding: 55px 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .beneficio {
@@ -228,7 +314,110 @@ button {
   line-height: 1.6;
 }
 
-/* Celular */
+/* ================================
+   CONTACTO
+================================ */
+
+.contacto {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.contacto h2 {
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+}
+
+.contacto p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.botones-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.boton-contacto {
+  display: inline-block;
+  padding: 13px 26px;
+  border: 1.5px solid #111111;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background: #111111;
+  color: #ffffff;
+}
+
+/* ================================
+   PIE DE PÁGINA
+================================ */
+
+.pie-pagina {
+  padding: 35px 5%;
+  text-align: center;
+  background: #111111;
+  color: #ffffff;
+}
+
+.pie-pagina p {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.pie-pagina a {
+  opacity: 0.85;
+}
+
+.pie-pagina a:hover {
+  opacity: 1;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 950px) {
+  .categorias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beneficio:nth-child(2) {
+    border-right: 0;
+  }
+
+  .beneficio:nth-child(-n + 2) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .sobre-contenido {
+    gap: 35px;
+  }
+}
+
+/* ================================
+   CELULAR
+================================ */
 
 @media (max-width: 760px) {
   .encabezado {
@@ -236,17 +425,37 @@ button {
     padding: 0 20px;
   }
 
+  .marca-menu {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+
   .menu {
     display: none;
   }
 
   .portada {
-    min-height: calc(100vh - 68px);
-    padding: 50px 20px;
+    min-height: auto;
+    padding: 28px 14px 24px;
   }
 
   .logo-principal {
-    width: min(360px, 90vw);
+    width: min(480px, 92vw);
+    margin-bottom: 8px;
+  }
+
+  .boton-principal {
+    padding: 12px 25px;
+    font-size: 12px;
+  }
+
+  .coleccion {
+    padding: 65px 20px;
+  }
+
+  .titulo-seccion {
+    margin-bottom: 35px;
+    font-size: 36px;
   }
 
   .categorias {
@@ -254,11 +463,30 @@ button {
   }
 
   .categoria {
-    min-height: 300px;
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .categoria img {
+    height: 260px;
+  }
+
+  .sobre-alba {
+    padding: 65px 20px;
+  }
+
+  .sobre-contenido {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .sobre-texto h2 {
+    font-size: 38px;
   }
 
   .beneficios {
     grid-template-columns: 1fr;
+    padding: 35px 20px;
   }
 
   .beneficio {
@@ -268,5 +496,40 @@ button {
 
   .beneficio:last-child {
     border-bottom: 0;
+  }
+
+  .contacto {
+    padding: 65px 20px;
+  }
+
+  .botones-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boton-contacto {
+    width: min(100%, 300px);
+  }
+}
+
+/* ================================
+   CELULARES PEQUEÑOS
+================================ */
+
+@media (max-width: 420px) {
+  .logo-principal {
+    width: 94vw;
+  }
+
+  .categoria img {
+    height: 220px;
+  }
+
+  .categoria h3 {
+    font-size: 25px;
+  }
+
+  .titulo-seccion {
+    font-size: 32px;
   }
 }
