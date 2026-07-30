@@ -2,7 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Alba Studio Textil. Neceseres, scrunchies, fundas, totebags y accesorios confeccionados con cariño."
+  >
 
   <title>Alba Studio Textil</title>
 
@@ -11,222 +20,907 @@
 
 <body>
 
+  <!-- =========================
+       ENCABEZADO
+  ========================== -->
+
   <header class="encabezado">
 
-    <div class="marca-menu">
+    <a href="#inicio" class="marca-menu">
       ALBA
-    </div>
+    </a>
 
-    <nav class="menu">
+    <!-- Menú para computador -->
+
+    <nav class="menu" aria-label="Menú principal">
       <a href="#inicio">Inicio</a>
-      <a href="#coleccion">Colección</a>
+      <a href="#novedades">Novedades</a>
+      <a href="#mas-vendidos">Más vendidos</a>
+      <a href="#colecciones">Colecciones</a>
       <a href="#sobre-alba">Sobre Alba</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <button class="carrito-boton" aria-label="Abrir carrito">
-      🛍
-      <span class="carrito-contador">0</span>
+    <!-- Botón menú celular -->
+
+    <button
+      class="menu-movil-boton"
+      id="abrir-menu"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="menu-lateral"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
   </header>
 
+  <!-- Fondo oscuro menú celular -->
+
+  <div
+    class="menu-fondo"
+    id="menu-fondo"
+  ></div>
+
+  <!-- Menú lateral celular -->
+
+  <aside
+    class="menu-lateral"
+    id="menu-lateral"
+    aria-label="Menú para celular"
+  >
+
+    <div class="menu-lateral-encabezado">
+
+      <span>ALBA</span>
+
+      <button
+        class="cerrar-menu"
+        id="cerrar-menu"
+        type="button"
+        aria-label="Cerrar menú"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <nav class="menu-lateral-enlaces">
+
+      <a href="#inicio">Inicio</a>
+      <a href="#novedades">Novedades</a>
+      <a href="#mas-vendidos">Más vendidos</a>
+      <a href="#colecciones">Colecciones</a>
+      <a href="#sobre-alba">Sobre Alba</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#contacto">Contacto</a>
+
+    </nav>
+
+    <div class="menu-lateral-contacto">
+
+      <p>Alba Studio Textil</p>
+      <p>Complementa tu día.</p>
+
+      <div class="menu-redes">
+
+        <a
+          href="https://www.instagram.com/alba_studiotextil"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://wa.me/56994187887"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </aside>
 
   <main>
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
 
     <section class="portada" id="inicio">
 
       <img
-        src="ALBA.png"
-        alt="Alba Design and Sewing"
+        src="imagen/logo.png"
+        alt="Logo de Alba Studio Textil"
         class="logo-principal"
       >
 
-      <a href="#coleccion" class="boton-principal">
-        Ver Productos
+      <p class="frase-portada">
+        Accesorios textiles para complementar tu día
+      </p>
+
+      <a href="#novedades" class="boton-principal">
+        Ver productos
       </a>
 
     </section>
 
+    <!-- =========================
+         NOVEDADES
+    ========================== -->
 
-    <section class="coleccion" id="coleccion">
+    <section class="seccion-productos novedades" id="novedades">
 
-      <p class="etiqueta-seccion">
-        NUESTROS PRODUCTOS
-      </p>
+      <div class="encabezado-seccion">
 
-      <h2 class="titulo-seccion">
-        Hechos para acompañarte todos los días.
-      </h2>
+        <p class="etiqueta-seccion">
+          Recién llegados
+        </p>
 
-      <div class="categorias">
+        <h2 class="titulo-seccion">
+          Novedades
+        </h2>
 
-        <article class="categoria">
-       <img src="img/neceser1.png" alt="Neceseres Alba">
-          <h3>Neceseres</h3>
+        <p class="descripcion-seccion">
+          Nuevos diseños creados para acompañarte todos los días.
+        </p>
 
-          <p>
-            Diseños funcionales para organizar tus esenciales
-            y acompañarte en cada momento.
-          </p>
+      </div>
 
-          <a href="#">
-            Ver todo →
-          </a>
+      <div class="productos-grid">
+
+        <!-- Producto 1 -->
+
+        <article class="producto-card">
+
+          <div class="producto-imagen">
+
+            <span class="producto-etiqueta">
+              Nuevo
+            </span>
+
+            <img
+              src="imagen/novedad1.png"
+              alt="Producto nuevo de Alba Studio Textil"
+            >
+
+          </div>
+
+          <div class="producto-informacion">
+
+            <h3>Neceser Floral</h3>
+
+            <p class="producto-descripcion">
+              Un diseño práctico para organizar tus esenciales con estilo.
+            </p>
+
+            <p class="producto-precio">
+              $14.990
+            </p>
+
+            <a
+              href="https://wa.me/56994187887?text=Hola%20Maca,%20quiero%20consultar%20por%20el%20Neceser%20Floral"
+              class="producto-boton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar
+            </a>
+
+          </div>
+
         </article>
 
+        <!-- Producto 2 -->
 
-        <article class="categoria">
-        <img src="img/scrunchies1.png" alt="Scrunchies Alba">
-          <h3>Scrunchies</h3>
+        <article class="producto-card">
 
-          <p>
-            Maxi scrunchies confeccionados para complementar
-            tu look con un detalle especial.
-          </p>
+          <div class="producto-imagen">
 
-          <a href="#">
-            Ver todo →
-          </a>
+            <span class="producto-etiqueta">
+              Nuevo
+            </span>
+
+            <img
+              src="imagen/novedad2.png"
+              alt="Funda nueva de Alba Studio Textil"
+            >
+
+          </div>
+
+          <div class="producto-informacion">
+
+            <h3>Funda para Libro</h3>
+
+            <p class="producto-descripcion">
+              Protege tus lecturas favoritas con un diseño suave y especial.
+            </p>
+
+            <p class="producto-precio">
+              $12.990
+            </p>
+
+            <a
+              href="https://wa.me/56994187887?text=Hola%20Maca,%20quiero%20consultar%20por%20la%20Funda%20para%20Libro"
+              class="producto-boton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar
+            </a>
+
+          </div>
+
         </article>
 
+        <!-- Producto 3 -->
 
-      
-        
-        <article class="categoria">
-         <img src="img/accesorios1.png" alt="Accesorios Alba">
-          <h3>Complementos</h3>
+        <article class="producto-card">
 
-          <p>
-            Pequeños esenciales hechos con dedicación
-            para complementar tu día.
-          </p>
+          <div class="producto-imagen">
 
-          <a href="#">
-            Ver todo →
-          </a>
+            <span class="producto-etiqueta">
+              Nuevo
+            </span>
+
+            <img
+              src="imagen/novedad3.png"
+              alt="Scrunchie nuevo de Alba Studio Textil"
+            >
+
+          </div>
+
+          <div class="producto-informacion">
+
+            <h3>Maxi Scrunchie</h3>
+
+            <p class="producto-descripcion">
+              Un toque de color, volumen y comodidad para tu peinado.
+            </p>
+
+            <p class="producto-precio">
+              $3.500
+            </p>
+
+            <a
+              href="https://wa.me/56994187887?text=Hola%20Maca,%20quiero%20consultar%20por%20el%20Maxi%20Scrunchie"
+              class="producto-boton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar
+            </a>
+
+          </div>
+
         </article>
 
       </div>
 
     </section>
 
+    <!-- =========================
+         MÁS VENDIDOS
+    ========================== -->
+
+    <section class="seccion-productos mas-vendidos" id="mas-vendidos">
+
+      <div class="encabezado-seccion">
+
+        <p class="etiqueta-seccion">
+          Favoritos de Alba
+        </p>
+
+        <h2 class="titulo-seccion">
+          Los más vendidos
+        </h2>
+
+        <p class="descripcion-seccion">
+          Los productos elegidos una y otra vez por nuestras clientas.
+        </p>
+
+      </div>
+
+      <div class="productos-grid">
+
+        <!-- Producto 1 -->
+
+        <article class="producto-card">
+
+          <div class="producto-imagen">
+
+            <span class="producto-etiqueta etiqueta-oscura">
+              Más vendido
+            </span>
+
+            <img
+              src="imagen/masvendido1.png"
+              alt="Neceser Versátil Alba Studio Textil"
+            >
+
+          </div>
+
+          <div class="producto-informacion">
+
+            <h3>Neceser Versátil</h3>
+
+            <p class="producto-descripcion">
+              Espacioso, cómodo y perfecto para tus básicos diarios.
+            </p>
+
+            <p class="producto-precio">
+              $14.990
+            </p>
+
+            <a
+              href="https://wa.me/56994187887?text=Hola%20Maca,%20quiero%20consultar%20por%20el%20Neceser%20Versátil"
+              class="producto-boton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- Producto 2 -->
+
+        <article class="producto-card">
+
+          <div class="producto-imagen">
+
+            <span class="producto-etiqueta etiqueta-oscura">
+              Más vendido
+            </span>
+
+            <img
+              src="imagen/masvendido2.png"
+              alt="Pack de scrunchies Alba Studio Textil"
+            >
+
+          </div>
+
+          <div class="producto-informacion">
+
+            <h3>Pack de Scrunchies</h3>
+
+            <p class="producto-descripcion">
+              Tres diseños para combinar y complementar todos tus looks.
+            </p>
+
+            <p class="producto-precio">
+              $9.990
+            </p>
+
+            <a
+              href="https://wa.me/56994187887?text=Hola%20Maca,%20quiero%20consultar%20por%20el%20Pack%20de%20Scrunchies"
+              class="producto-boton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- Producto 3 -->
+
+        <article class="producto-card">
+
+          <div class="producto-imagen">
+
+            <span class="producto-etiqueta etiqueta-oscura">
+              Favorito
+            </span>
+
+            <img
+              src="imagen/masvendido3.png"
+              alt="Neceser de Viaje Alba Studio Textil"
+            >
+
+          </div>
+
+          <div class="producto-informacion">
+
+            <h3>Neceser de Viaje</h3>
+
+            <p class="producto-descripcion">
+              Gran capacidad para llevar maquillaje, skincare y accesorios.
+            </p>
+
+            <p class="producto-precio">
+              $18.990
+            </p>
+
+            <a
+              href="https://wa.me/56994187887?text=Hola%20Maca,%20quiero%20consultar%20por%20el%20Neceser%20de%20Viaje"
+              class="producto-boton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         COLECCIONES
+    ========================== -->
+
+    <section class="coleccion" id="colecciones">
+
+      <div class="encabezado-seccion">
+
+        <p class="etiqueta-seccion">
+          Explora
+        </p>
+
+        <h2 class="titulo-seccion">
+          Nuestras colecciones
+        </h2>
+
+        <p class="descripcion-seccion">
+          Encuentra el accesorio perfecto para acompañarte.
+        </p>
+
+      </div>
+
+      <div class="categorias">
+
+        <!-- Neceseres -->
+
+        <article class="categoria">
+
+          <img
+            src="imagen/neceser1.png"
+            alt="Colección de neceseres Alba Studio Textil"
+          >
+
+          <div class="categoria-contenido">
+
+            <h3>Neceseres</h3>
+
+            <p>
+              Organiza tus esenciales con estilo.
+            </p>
+
+            <a href="#contacto">
+              Ver colección
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- Scrunchies -->
+
+        <article class="categoria">
+
+          <img
+            src="imagen/scrunchie1.png"
+            alt="Colección de scrunchies Alba Studio Textil"
+          >
+
+          <div class="categoria-contenido">
+
+            <h3>Scrunchies</h3>
+
+            <p>
+              Color y comodidad para cada peinado.
+            </p>
+
+            <a href="#contacto">
+              Ver colección
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- Totebags -->
+
+        <article class="categoria">
+
+          <img
+            src="imagen/totebag1.png"
+            alt="Colección de totebags Alba Studio Textil"
+          >
+
+          <div class="categoria-contenido">
+
+            <h3>Totebags</h3>
+
+            <p>
+              Llévalo todo contigo.
+            </p>
+
+            <a href="#contacto">
+              Ver colección
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- Fundas -->
+
+        <article class="categoria">
+
+          <img
+            src="imagen/funda1.png"
+            alt="Colección de fundas Alba Studio Textil"
+          >
+
+          <div class="categoria-contenido">
+
+            <h3>Fundas</h3>
+
+            <p>
+              Protege lo que más te acompaña.
+            </p>
+
+            <a href="#contacto">
+              Ver colección
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- Complementos -->
+
+        <article class="categoria">
+
+          <img
+            src="imagen/complementos1.png"
+            alt="Colección de complementos Alba Studio Textil"
+          >
+
+          <div class="categoria-contenido">
+
+            <h3>Complementos</h3>
+
+            <p>
+              Pequeños detalles que hacen la diferencia.
+            </p>
+
+            <a href="#contacto">
+              Ver colección
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         SOBRE ALBA
+    ========================== -->
+
+    <section class="sobre-alba" id="sobre-alba">
+
+      <div class="sobre-contenido">
+
+        <div class="sobre-imagen">
+
+          <img
+            src="imagen/sobre-alba.png"
+            alt="Proceso de confección de Alba Studio Textil"
+          >
+
+        </div>
+
+        <div class="sobre-texto">
+
+          <p class="etiqueta-seccion">
+            Hecho con cariño
+          </p>
+
+          <h2>
+            Hola, soy Maca
+          </h2>
+
+          <p>
+            Alba Studio Textil nació de mi amor por la costura y por crear
+            accesorios lindos, útiles y especiales para acompañarte todos
+            los días.
+          </p>
+
+          <p>
+            Cada scrunchie, neceser, funda y complemento es confeccionado
+            con dedicación, cuidando los detalles y buscando que cada pieza
+            tenga su propia personalidad.
+          </p>
+
+          <p>
+            Gracias por elegir productos hechos a mano y por apoyar este
+            pequeño emprendimiento.
+          </p>
+
+          <p class="firma-maca">
+            Con cariño, Maca 🤍
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         BENEFICIOS
+    ========================== -->
 
     <section class="beneficios">
 
-      <div class="beneficio">
-        <span>🚚</span>
+      <article class="beneficio">
 
-        <h4>Envíos a todo Chile</h4>
+        <span>✂️</span>
 
-        <p>
-          Recibe tu pedido estés donde estés.
-        </p>
-      </div>
-
-
-      <div class="beneficio">
-        <span>♡</span>
-
-        <h4>Hecho con dedicación</h4>
+        <h4>Hecho a mano</h4>
 
         <p>
-          Cada pieza está diseñada y confeccionada por mí.
+          Cada producto es confeccionado con dedicación.
         </p>
-      </div>
 
+      </article>
 
-      <div class="beneficio">
-        <span>✦</span>
+      <article class="beneficio">
+
+        <span>🤍</span>
 
         <h4>Diseños especiales</h4>
 
         <p>
-          Colecciones textiles pensadas para acompañarte.
+          Accesorios pensados para complementar tu día.
         </p>
-      </div>
 
+      </article>
 
-      <div class="beneficio">
-        <span>✉</span>
+      <article class="beneficio">
 
-        <h4>Atención personalizada</h4>
+        <span>📦</span>
+
+        <h4>Envíos a Chile</h4>
 
         <p>
-          Escríbeme y te ayudaré con cualquier consulta.
+          Despachos disponibles a distintas regiones.
         </p>
-      </div>
+
+      </article>
+
+      <article class="beneficio">
+
+        <span>💬</span>
+
+        <h4>Atención directa</h4>
+
+        <p>
+          Compra y consulta directamente por WhatsApp.
+        </p>
+
+      </article>
 
     </section>
 
+    <!-- =========================
+         INSTAGRAM
+    ========================== -->
 
-    <section
-      id="sobre-alba"
-      style="padding:90px 5%; text-align:center; border-top:1px solid #eee;"
-    >
+    <section class="instagram" id="instagram">
+
+      <div class="encabezado-seccion">
+
+        <p class="etiqueta-seccion">
+          Síguenos
+        </p>
+
+        <h2 class="titulo-seccion">
+          Instagram
+        </h2>
+
+        <p class="descripcion-seccion">
+          Descubre nuevos diseños, procesos y novedades de Alba.
+        </p>
+
+      </div>
+
+      <div class="instagram-grid">
+
+        <img
+          src="imagen/instagram1.png"
+          alt="Producto publicado en Instagram de Alba"
+        >
+
+        <img
+          src="imagen/instagram2.png"
+          alt="Accesorio Alba Studio Textil"
+        >
+
+        <img
+          src="imagen/instagram3.png"
+          alt="Proceso de confección Alba Studio Textil"
+        >
+
+        <img
+          src="imagen/instagram4.png"
+          alt="Diseño de Alba Studio Textil"
+        >
+
+      </div>
+
+      <a
+        href="https://www.instagram.com/alba_studiotextil"
+        class="boton-secundario"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ver Instagram
+      </a>
+
+    </section>
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section class="contacto" id="contacto">
 
       <p class="etiqueta-seccion">
-        Sobre Alba
+        Estamos para ayudarte
       </p>
 
-      <h2 class="titulo-seccion">
-        Diseño, costura y detalles hechos con dedicación.
+      <h2>
+        ¿Encontraste algo que te encantó?
       </h2>
 
-      <p
-        style="
-          max-width:650px;
-          margin:auto;
-          color:#555;
-          line-height:1.8;
-          font-size:15px;
-        "
-      >
-        ¡Hola! Soy Maca, la persona detrás de Alba Studio Textil. ✨
-
-Creé este pequeño emprendimiento porque siempre he disfrutado transformar telas en accesorios bonitos, prácticos y pensados para acompañarte en tu día a día.
-
-Cada scrunchie, neceser, funda y accesorio está confeccionado con mucho cariño, cuidando cada detalle para que recibas un producto de calidad, funcional y hecho con dedicación.
-
-Gracias por estar aquí y por apoyar un emprendimiento hecho con el corazón. Espero que encuentres algo que te encante y que pueda acompañarte por mucho tiempo.
-
-Con cariño,
-
-Maca 🤍
+      <p>
+        Escríbeme para consultar disponibilidad, diseños, colores,
+        medidas o coordinar tu pedido.
       </p>
+
+      <div class="botones-contacto">
+
+        <a
+          href="https://wa.me/56994187887?text=Hola%20Maca,%20quiero%20consultar%20por%20los%20productos%20de%20Alba%20Studio%20Textil"
+          class="boton-contacto boton-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Comprar por WhatsApp
+        </a>
+
+        <a
+          href="https://www.instagram.com/alba_studiotextil"
+          class="boton-contacto"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Escribir por Instagram
+        </a>
+
+      </div>
 
     </section>
 
   </main>
 
+  <!-- =========================
+       PIE DE PÁGINA
+  ========================== -->
 
-  <footer
-    id="contacto"
-    style="
-      padding:50px 5%;
-      text-align:center;
-      border-top:1px solid #eee;
-    "
-  >
+  <footer class="pie-pagina">
 
-    <p style="font-weight:700; letter-spacing:4px; margin-bottom:18px;">
-      ALBA
+    <p class="pie-marca">
+      ALBA STUDIO TEXTIL
     </p>
 
-    <a
-      href="https://www.instagram.com/alba_studiotextil"
-      target="_blank"
-      rel="noopener noreferrer"
-      style="font-size:14px;"
-    >
-      Instagram · @alba_studiotextil
-    </a>
+    <p>
+      Complementa tu día.
+    </p>
 
-    <p style="margin-top:20px; color:#777; font-size:12px;">
-      © 2026 Alba Studio Textil
+    <p class="pie-derechos">
+      © 2026 Alba Studio Textil. Todos los derechos reservados.
     </p>
 
   </footer>
+
+  <!-- =========================
+       JAVASCRIPT MENÚ CELULAR
+  ========================== -->
+
+  <script>
+
+    const botonAbrirMenu =
+      document.getElementById("abrir-menu");
+
+    const botonCerrarMenu =
+      document.getElementById("cerrar-menu");
+
+    const menuLateral =
+      document.getElementById("menu-lateral");
+
+    const fondoMenu =
+      document.getElementById("menu-fondo");
+
+    const enlacesMenu =
+      document.querySelectorAll(".menu-lateral-enlaces a");
+
+    function abrirMenu() {
+      menuLateral.classList.add("activo");
+      fondoMenu.classList.add("activo");
+      document.body.classList.add("menu-abierto");
+
+      botonAbrirMenu.setAttribute(
+        "aria-expanded",
+        "true"
+      );
+    }
+
+    function cerrarMenu() {
+      menuLateral.classList.remove("activo");
+      fondoMenu.classList.remove("activo");
+      document.body.classList.remove("menu-abierto");
+
+      botonAbrirMenu.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+    }
+
+    botonAbrirMenu.addEventListener(
+      "click",
+      abrirMenu
+    );
+
+    botonCerrarMenu.addEventListener(
+      "click",
+      cerrarMenu
+    );
+
+    fondoMenu.addEventListener(
+      "click",
+      cerrarMenu
+    );
+
+    enlacesMenu.forEach(function (enlace) {
+      enlace.addEventListener(
+        "click",
+        cerrarMenu
+      );
+    });
+
+    document.addEventListener(
+      "keydown",
+      function (evento) {
+        if (evento.key === "Escape") {
+          cerrarMenu();
+        }
+      }
+    );
+
+  </script>
 
 </body>
 </html>
