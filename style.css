@@ -118,7 +118,7 @@ button {
   width: min(620px, 88vw);
   height: auto;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 5px;
 }
 
 .boton-principal {
