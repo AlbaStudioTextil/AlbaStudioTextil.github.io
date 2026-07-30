@@ -104,23 +104,22 @@ button {
 }
 
 .logo-principal {
-  width: min(420px, 75vw);
+  width: min(520px, 85vw);
   height: auto;
-  margin: 0 auto 15px;
+  margin: 0 auto 10 px;
   display: block;
-}
 }
 }
 
 .boton-principal {
   display: inline-block;
+  padding: 14px 30px;
   border: 1.5px solid #111111;
-  padding: 17px 42px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  transition: 0.25s ease;
+  border-radius: 999px;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .boton-principal:hover {
