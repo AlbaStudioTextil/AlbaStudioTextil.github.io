@@ -1,86 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alba Studio Textil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  <title>Alba Studio Textil</title>
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fff;
-    color:#111;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-}
-
-h1{
-    font-size:clamp(60px,10vw,120px);
-    font-weight:900;
-    line-height:1;
-}
-
-.subtitulo{
-    margin-top:25px;
-    letter-spacing:8px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.est{
-    margin-top:10px;
-    letter-spacing:4px;
-    font-size:16px;
-}
-
-.boton{
-    margin-top:60px;
-    display:inline-block;
-    padding:18px 45px;
-    border:2px solid #111;
-    border-radius:40px;
-    text-decoration:none;
-    color:#111;
-    font-weight:bold;
-    letter-spacing:2px;
-    transition:.3s;
-}
-
-.boton:hover{
-    background:#111;
-    color:white;
-}
-</style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<section class="hero">
+  <header class="encabezado">
 
-<h1>Alba</h1>
+    <div class="marca-menu">
+      ALBA
+    </div>
 
-<p class="subtitulo">DESIGN &amp; SEWING</p>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#sobre-alba">Sobre Alba</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-<p class="est">- EST 2026 -</p>
+    <button class="carrito-boton" aria-label="Abrir carrito">
+      🛍
+      <span class="carrito-contador">0</span>
+    </button>
 
-<a class="boton" href="#">VER COLECCIÓN</a>
+  </header>
 
-</section>
+
+  <main>
+
+    <section class="portada" id="inicio">
+
+      <img
+        src="ALBA.png"
+        alt="Alba Design and Sewing"
+        class="logo-principal"
+      >
+
+      <a href="#coleccion" class="boton-principal">
+        Ver colección
+      </a>
+
+    </section>
+
+
+    <section class="coleccion" id="coleccion">
+
+      <p class="etiqueta-seccion">
+        Nueva colección
+      </p>
+
+      <h2 class="titulo-seccion">
+        Hechos para acompañarte todos los días.
+      </h2>
+
+      <div class="categorias">
+
+        <article class="categoria">
+          <h3>Neceseres</h3>
+
+          <p>
+            Diseños funcionales para organizar tus esenciales
+            y acompañarte en cada momento.
+          </p>
+
+          <a href="#">
+            Ver todo →
+          </a>
+        </article>
+
+
+        <article class="categoria">
+          <h3>Scrunchies</h3>
+
+          <p>
+            Maxi scrunchies confeccionados para complementar
+            tu look con un detalle especial.
+          </p>
+
+          <a href="#">
+            Ver todo →
+          </a>
+        </article>
+
+
+        <article class="categoria">
+          <h3>Accesorios</h3>
+
+          <p>
+            Pequeños esenciales hechos con dedicación
+            para complementar tu día.
+          </p>
+
+          <a href="#">
+            Ver todo →
+          </a>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section class="beneficios">
+
+      <div class="beneficio">
+        <span>🚚</span>
+
+        <h4>Envíos a todo Chile</h4>
+
+        <p>
+          Recibe tu pedido estés donde estés.
+        </p>
+      </div>
+
+
+      <div class="beneficio">
+        <span>♡</span>
+
+        <h4>Hecho con dedicación</h4>
+
+        <p>
+          Cada pieza está diseñada y confeccionada por mí.
+        </p>
+      </div>
+
+
+      <div class="beneficio">
+        <span>✦</span>
+
+        <h4>Diseños especiales</h4>
+
+        <p>
+          Colecciones textiles pensadas para acompañarte.
+        </p>
+      </div>
+
+
+      <div class="beneficio">
+        <span>✉</span>
+
+        <h4>Atención personalizada</h4>
+
+        <p>
+          Escríbeme y te ayudaré con cualquier consulta.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section
+      id="sobre-alba"
+      style="padding:90px 5%; text-align:center; border-top:1px solid #eee;"
+    >
+
+      <p class="etiqueta-seccion">
+        Sobre Alba
+      </p>
+
+      <h2 class="titulo-seccion">
+        Diseño, costura y detalles hechos con dedicación.
+      </h2>
+
+      <p
+        style="
+          max-width:650px;
+          margin:auto;
+          color:#555;
+          line-height:1.8;
+          font-size:15px;
+        "
+      >
+        Alba nace para crear accesorios textiles funcionales,
+        bonitos y especiales. Cada producto es confeccionado
+        cuidadosamente para acompañarte en tus días y complementar
+        tus momentos.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer
+    id="contacto"
+    style="
+      padding:50px 5%;
+      text-align:center;
+      border-top:1px solid #eee;
+    "
+  >
+
+    <p style="font-weight:700; letter-spacing:4px; margin-bottom:18px;">
+      ALBA
+    </p>
+
+    <a
+      href="https://www.instagram.com/alba_studiotextil"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="font-size:14px;"
+    >
+      Instagram · @alba_studiotextil
+    </a>
+
+    <p style="margin-top:20px; color:#777; font-size:12px;">
+      © 2026 Alba Studio Textil
+    </p>
+
+  </footer>
 
 </body>
 </html>
