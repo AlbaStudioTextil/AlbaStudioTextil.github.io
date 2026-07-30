@@ -104,11 +104,10 @@ button {
 }
 
 .logo-principal {
-  width: min(580px, 85vw);
+  width: min(620px, 85vw);
   height: auto;
   margin: 0 auto 5 px;
   display: block;
-}
 }
 
 .boton-principal {
