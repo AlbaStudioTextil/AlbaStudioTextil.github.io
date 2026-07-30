@@ -103,9 +103,10 @@ button {
   border-bottom: 1px solid #eeeeee;
 }
 
-.logo-principal img {
-  width: 650px;
-  max-width: 95%;
+.logo-principal {
+  width: min(520px, 82vw);
+  margin: 0 auto 15px;
+}
 }
 }
 
