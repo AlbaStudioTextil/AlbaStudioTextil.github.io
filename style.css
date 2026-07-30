@@ -104,8 +104,8 @@ button {
 }
 
 .logo-principal {
-  width: min(520px, 82vw);
-  margin: 0 auto 15px;
+    width: min(520px, 82vw);
+    margin: 0 auto 15px;
 }
 }
 }
