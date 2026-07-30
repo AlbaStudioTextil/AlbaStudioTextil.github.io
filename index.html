@@ -1,565 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alba Studio Textil</title>
 
-  <meta charset="UTF-8">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#111;
+}
 
-  <meta
-    name="description"
-    content="Alba Studio Textil. Neceseres, scrunchies, fundas, totebags y accesorios textiles hechos con dedicación."
-  >
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
 
-  <title>Alba Studio Textil</title>
+h1{
+    font-size:clamp(60px,10vw,120px);
+    font-weight:900;
+    line-height:1;
+}
 
-  <link rel="stylesheet" href="style.css">
+.subtitulo{
+    margin-top:25px;
+    letter-spacing:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.est{
+    margin-top:10px;
+    letter-spacing:4px;
+    font-size:16px;
+}
+
+.boton{
+    margin-top:60px;
+    display:inline-block;
+    padding:18px 45px;
+    border:2px solid #111;
+    border-radius:40px;
+    text-decoration:none;
+    color:#111;
+    font-weight:bold;
+    letter-spacing:2px;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#111;
+    color:white;
+}
+</style>
 
 </head>
 
 <body>
 
-  <!-- =========================
-       ENCABEZADO
-  ========================== -->
+<section class="hero">
 
-  <header class="encabezado">
+<h1>Alba</h1>
 
-    <a href="#inicio" class="marca-menu">
-      ALBA
-    </a>
+<p class="subtitulo">DESIGN &amp; SEWING</p>
 
-    <!-- Menú para computador -->
+<p class="est">- EST 2026 -</p>
 
-    <nav class="menu" aria-label="Menú principal">
+<a class="boton" href="#">VER COLECCIÓN</a>
 
-      <a href="#inicio">
-        Inicio
-      </a>
-
-      <a href="#novedades">
-        Novedades
-      </a>
-
-      <a href="#mas-vendidos">
-        Más vendidos
-      </a>
-
-      <a href="#colecciones">
-        Colecciones
-      </a>
-
-      <a href="#sobre-alba">
-        Sobre Alba
-      </a>
-
-      <a href="#contacto">
-        Contacto
-      </a>
-
-    </nav>
-
-    <!-- Botón menú celular -->
-
-    <button
-      class="menu-movil-boton"
-      id="abrir-menu"
-      type="button"
-      aria-label="Abrir menú"
-      aria-expanded="false"
-      aria-controls="menu-lateral"
-    >
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-    </button>
-
-  </header>
-
-  <!-- Fondo oscuro menú celular -->
-
-  <div
-    class="menu-fondo"
-    id="menu-fondo"
-  ></div>
-
-  <!-- Menú lateral celular -->
-
-  <aside
-    class="menu-lateral"
-    id="menu-lateral"
-    aria-label="Menú para celular"
-  >
-
-    <div class="menu-lateral-encabezado">
-
-      <span>
-        ALBA
-      </span>
-
-      <button
-        class="cerrar-menu"
-        id="cerrar-menu"
-        type="button"
-        aria-label="Cerrar menú"
-      >
-        ×
-      </button>
-
-    </div>
-
-    <nav class="menu-lateral-enlaces">
-
-      <a href="#inicio">
-        Inicio
-      </a>
-
-      <a href="#novedades">
-        Novedades
-      </a>
-
-      <a href="#mas-vendidos">
-        Más vendidos
-      </a>
-
-      <a href="#colecciones">
-        Colecciones
-      </a>
-
-      <a href="#sobre-alba">
-        Sobre Alba
-      </a>
-
-      <a href="#contacto">
-        Contacto
-      </a>
-
-    </nav>
-
-    <div class="menu-lateral-contacto">
-
-      <p>
-        Alba Studio Textil
-      </p>
-
-      <p>
-        Complementa tu día.
-      </p>
-
-      <div class="menu-redes">
-
-        <a
-          href="https://www.instagram.com/alba_studiotextil"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-
-        <a
-          href="https://wa.me/56994187887"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </aside>
-
-  <main>
-
-    <!-- =========================
-         PORTADA
-    ========================== -->
-
-    <section class="hero" id="inicio">
-
-      <img
-        src="logo.png"
-        class="logo"
-        alt="Alba Studio Textil"
-      >
-
-      <p class="subtitulo">
-        DESIGN &amp; SEWING
-      </p>
-
-      <p class="est">
-        – EST 2026 –
-      </p>
-
-      <a
-        href="#colecciones"
-        class="boton"
-      >
-        VER COLECCIÓN
-      </a>
-
-    </section>
-
-    <!-- =========================
-         NOVEDADES
-    ========================== -->
-
-    <section
-      class="seccion-simple novedades"
-      id="novedades"
-    >
-
-      <h2>
-        Novedades
-      </h2>
-
-      <!--
-        Aquí pondremos después
-        las imágenes de las novedades.
-      -->
-
-      <div class="espacio-productos"></div>
-
-    </section>
-
-    <!-- =========================
-         MÁS VENDIDOS
-    ========================== -->
-
-    <section
-      class="seccion-simple mas-vendidos"
-      id="mas-vendidos"
-    >
-
-      <h2>
-        Más vendidos
-      </h2>
-
-      <!--
-        Aquí pondremos después
-        las imágenes de los productos más vendidos.
-      -->
-
-      <div class="espacio-productos"></div>
-
-    </section>
-
-    <!-- =========================
-         COLECCIONES
-    ========================== -->
-
-    <section
-      class="colecciones"
-      id="colecciones"
-    >
-
-      <div class="encabezado-seccion">
-
-        <h2>
-          Nuestras colecciones
-        </h2>
-
-      </div>
-
-      <div class="categorias">
-
-        <!-- Neceseres -->
-
-        <article class="categoria">
-
-          <img
-            src="imagen/neceser1.png"
-            alt="Colección de neceseres Alba Studio Textil"
-          >
-
-          <div class="categoria-contenido">
-
-            <h3>
-              Neceseres
-            </h3>
-
-          </div>
-
-        </article>
-
-        <!-- Scrunchies -->
-
-        <article class="categoria">
-
-          <img
-            src="imagen/scrunchie1.png"
-            alt="Colección de scrunchies Alba Studio Textil"
-          >
-
-          <div class="categoria-contenido">
-
-            <h3>
-              Scrunchies
-            </h3>
-
-          </div>
-
-        </article>
-
-        <!-- Totebags -->
-
-        <article class="categoria">
-
-          <img
-            src="imagen/totebag1.png"
-            alt="Colección de totebags Alba Studio Textil"
-          >
-
-          <div class="categoria-contenido">
-
-            <h3>
-              Totebags
-            </h3>
-
-          </div>
-
-        </article>
-
-        <!-- Fundas -->
-
-        <article class="categoria">
-
-          <img
-            src="imagen/funda1.png"
-            alt="Colección de fundas Alba Studio Textil"
-          >
-
-          <div class="categoria-contenido">
-
-            <h3>
-              Fundas
-            </h3>
-
-          </div>
-
-        </article>
-
-        <!-- Complementos -->
-
-        <article class="categoria">
-
-          <img
-            src="imagen/complementos1.png"
-            alt="Colección de complementos Alba Studio Textil"
-          >
-
-          <div class="categoria-contenido">
-
-            <h3>
-              Complementos
-            </h3>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-    <!-- =========================
-         SOBRE ALBA
-    ========================== -->
-
-    <section
-      class="sobre-alba"
-      id="sobre-alba"
-    >
-
-      <div class="sobre-contenido">
-
-        <p class="etiqueta-seccion">
-          HECHO CON CARIÑO
-        </p>
-
-        <h2>
-          Sobre Alba
-        </h2>
-
-        <p>
-          Alba Studio Textil nace del amor por la costura
-          y por crear accesorios lindos, útiles y especiales
-          para acompañarte todos los días.
-        </p>
-
-        <p>
-          Cada pieza es confeccionada con dedicación,
-          cuidando cada detalle.
-        </p>
-
-        <p class="firma-maca">
-          Con cariño, Maca 🤍
-        </p>
-
-      </div>
-
-    </section>
-
-    <!-- =========================
-         CONTACTO
-    ========================== -->
-
-    <section
-      class="contacto"
-      id="contacto"
-    >
-
-      <p class="etiqueta-seccion">
-        HABLEMOS
-      </p>
-
-      <h2>
-        Encuentra tu complemento favorito
-      </h2>
-
-      <div class="botones-contacto">
-
-        <a
-          href="https://wa.me/56994187887"
-          class="boton-contacto boton-whatsapp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </a>
-
-        <a
-          href="https://www.instagram.com/alba_studiotextil"
-          class="boton-contacto"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- =========================
-       PIE DE PÁGINA
-  ========================== -->
-
-  <footer class="pie-pagina">
-
-    <p class="pie-marca">
-      ALBA STUDIO TEXTIL
-    </p>
-
-    <p>
-      Complementa tu día.
-    </p>
-
-    <p class="pie-derechos">
-      © 2026 Alba Studio Textil
-    </p>
-
-  </footer>
-
-  <!-- =========================
-       MENÚ CELULAR
-  ========================== -->
-
-  <script>
-
-    const botonAbrirMenu =
-      document.getElementById("abrir-menu");
-
-    const botonCerrarMenu =
-      document.getElementById("cerrar-menu");
-
-    const menuLateral =
-      document.getElementById("menu-lateral");
-
-    const fondoMenu =
-      document.getElementById("menu-fondo");
-
-    const enlacesMenu =
-      document.querySelectorAll(".menu-lateral-enlaces a");
-
-    function abrirMenu() {
-
-      menuLateral.classList.add("activo");
-
-      fondoMenu.classList.add("activo");
-
-      document.body.classList.add("menu-abierto");
-
-      botonAbrirMenu.setAttribute(
-        "aria-expanded",
-        "true"
-      );
-
-    }
-
-    function cerrarMenu() {
-
-      menuLateral.classList.remove("activo");
-
-      fondoMenu.classList.remove("activo");
-
-      document.body.classList.remove("menu-abierto");
-
-      botonAbrirMenu.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-
-    }
-
-    botonAbrirMenu.addEventListener(
-      "click",
-      abrirMenu
-    );
-
-    botonCerrarMenu.addEventListener(
-      "click",
-      cerrarMenu
-    );
-
-    fondoMenu.addEventListener(
-      "click",
-      cerrarMenu
-    );
-
-    enlacesMenu.forEach(function (enlace) {
-
-      enlace.addEventListener(
-        "click",
-        cerrarMenu
-      );
-
-    });
-
-    document.addEventListener(
-      "keydown",
-      function (evento) {
-
-        if (evento.key === "Escape") {
-
-          cerrarMenu();
-
-        }
-
-      }
-    );
-
-  </script>
+</section>
 
 </body>
-
 </html>
