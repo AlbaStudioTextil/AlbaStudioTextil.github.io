@@ -104,9 +104,9 @@ button {
 }
 
 .logo-principal {
-  width: min(520px, 85vw);
+  width: min(580px, 85vw);
   height: auto;
-  margin: 0 auto 10 px;
+  margin: 0 auto 5 px;
   display: block;
 }
 }
