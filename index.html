@@ -13,9 +13,23 @@
 
   <header class="encabezado">
 
-    <div class="marca-menu">
-      ALBA
-    </div>
+   <div class="lado-izquierdo">
+
+  <button
+    class="menu-productos-boton"
+    id="abrir-menu-productos"
+    aria-label="Abrir menú de productos"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="marca-menu">
+    ALBA
+  </div>
+
+</div>
 
     <nav class="menu">
       <a href="#inicio">Inicio</a>
@@ -30,7 +44,41 @@
     </button>
 
   </header>
+<div class="fondo-menu-productos" id="fondo-menu-productos"></div>
 
+<aside class="menu-productos" id="menu-productos">
+
+  <div class="menu-productos-superior">
+
+    <p>Productos</p>
+
+    <button
+      class="cerrar-menu-productos"
+      id="cerrar-menu-productos"
+      aria-label="Cerrar menú"
+    >
+      ×
+    </button>
+
+  </div>
+
+  <nav class="menu-productos-enlaces">
+
+    <a href="#neceseres">
+      Neceseres
+    </a>
+
+    <a href="#scrunchies">
+      Scrunchies
+    </a>
+
+    <a href="#complementos">
+      Complementos
+    </a>
+
+  </nav>
+
+</aside>
 
   <main>
 
@@ -52,7 +100,7 @@
     <section class="coleccion" id="coleccion">
 
       <p class="etiqueta-seccion">
-        Nueva colección
+        NUESTRA COLECCIÓN
       </p>
 
       <h2 class="titulo-seccion">
@@ -61,7 +109,8 @@
 
       <div class="categorias">
 
-        <article class="categoria">
+        <article class="categoria" id="neceseres">
+         <img src="img/neceser1.png" alt="Neceseres Alba">
           <h3>Neceseres</h3>
 
           <p>
@@ -75,7 +124,8 @@
         </article>
 
 
-        <article class="categoria">
+        <article class="categoria" id="scrunchies">
+          <img src="img/scrunchies1.png" alt="Scrunchies Alba">
           <h3>Scrunchies</h3>
 
           <p>
@@ -89,8 +139,9 @@
         </article>
 
 
-        <article class="categoria">
-          <h3>Accesorios</h3>
+       <article class="categoria" id="complementos">
+           <img src="img/accesorios1.png" alt="Accesorios Alba">
+          <h3>Complementos</h3>
 
           <p>
             Pequeños esenciales hechos con dedicación
@@ -177,10 +228,17 @@
           font-size:15px;
         "
       >
-        Alba nace para crear accesorios textiles funcionales,
-        bonitos y especiales. Cada producto es confeccionado
-        cuidadosamente para acompañarte en tus días y complementar
-        tus momentos.
+       ¡Hola! Soy Maca, la persona detrás de Alba Studio Textil. ✨
+
+Creé este pequeño emprendimiento porque siempre he disfrutado transformar telas en accesorios bonitos, prácticos y pensados para acompañarte en tu día a día.
+
+Cada scrunchie, neceser, funda y accesorio está confeccionado con mucho cariño, cuidando cada detalle para que recibas un producto de calidad, funcional y hecho con dedicación.
+
+Gracias por estar aquí y por apoyar un emprendimiento hecho con el corazón. Espero que encuentres algo que te encante y que pueda acompañarte por mucho tiempo.
+
+Con cariño,
+
+Maca 🤍
       </p>
 
     </section>
@@ -215,6 +273,41 @@
     </p>
 
   </footer>
+<script>
 
+  const abrirMenuProductos =
+    document.getElementById("abrir-menu-productos");
+
+  const cerrarMenuProductos =
+    document.getElementById("cerrar-menu-productos");
+
+  const menuProductos =
+    document.getElementById("menu-productos");
+
+  const fondoMenuProductos =
+    document.getElementById("fondo-menu-productos");
+
+  const enlacesProductos =
+    document.querySelectorAll(".menu-productos-enlaces a");
+
+  function abrirMenu() {
+    menuProductos.classList.add("activo");
+    fondoMenuProductos.classList.add("activo");
+  }
+
+  function cerrarMenu() {
+    menuProductos.classList.remove("activo");
+    fondoMenuProductos.classList.remove("activo");
+  }
+
+  abrirMenuProductos.addEventListener("click", abrirMenu);
+  cerrarMenuProductos.addEventListener("click", cerrarMenu);
+  fondoMenuProductos.addEventListener("click", cerrarMenu);
+
+  enlacesProductos.forEach(function(enlace) {
+    enlace.addEventListener("click", cerrarMenu);
+  });
+
+</script>
 </body>
 </html>
