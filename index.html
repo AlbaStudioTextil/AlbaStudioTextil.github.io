@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Alba Studio Textil</title>
 
@@ -13,23 +18,24 @@
 
   <header class="encabezado">
 
-   <div class="lado-izquierdo">
+    <div class="lado-izquierdo">
 
-  <button
-    class="menu-productos-boton"
-    id="abrir-menu-productos"
-    aria-label="Abrir menú de productos"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+      <button
+        class="menu-productos-boton"
+        id="abrir-menu-productos"
+        aria-label="Abrir menú de productos"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <div class="marca-menu">
-    ALBA
-  </div>
+      <a href="index.html" class="marca-menu">
+        ALBA
+      </a>
 
-</div>
+    </div>
 
     <nav class="menu">
       <a href="#inicio">Inicio</a>
@@ -38,117 +44,197 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <button class="carrito-boton" aria-label="Abrir carrito">
-      🛍
-      <span class="carrito-contador">0</span>
-    </button>
+    <a
+      class="carrito-boton"
+      href="https://wa.me/56994187887"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      ♡
+    </a>
 
   </header>
-<div class="fondo-menu-productos" id="fondo-menu-productos"></div>
 
-<aside class="menu-productos" id="menu-productos">
 
-  <div class="menu-productos-superior">
+  <!-- Fondo oscuro del menú lateral -->
 
-    <p>Productos</p>
+  <div
+    class="fondo-menu-productos"
+    id="fondo-menu-productos"
+  ></div>
 
-    <button
-      class="cerrar-menu-productos"
-      id="cerrar-menu-productos"
-      aria-label="Cerrar menú"
-    >
-      ×
-    </button>
 
-  </div>
+  <!-- Menú lateral de categorías -->
 
-  <nav class="menu-productos-enlaces">
+  <aside
+    class="menu-productos"
+    id="menu-productos"
+  >
 
-    <a href="#neceseres">
-      Neceseres
-    </a>
+    <div class="menu-productos-superior">
 
-    <a href="#scrunchies">
-      Scrunchies
-    </a>
+      <p>Productos</p>
 
-    <a href="#complementos">
-      Complementos
-    </a>
+      <button
+        class="cerrar-menu-productos"
+        id="cerrar-menu-productos"
+        aria-label="Cerrar menú"
+        type="button"
+      >
+        ×
+      </button>
 
-  </nav>
+    </div>
 
-</aside>
+    <nav class="menu-productos-enlaces">
+
+      <a href="neceseres.html">
+        Neceseres
+      </a>
+
+      <a href="scrunchies.html">
+        Scrunchies
+      </a>
+
+      <a href="accesorios.html">
+        Complementos
+      </a>
+
+    </nav>
+
+  </aside>
+
 
   <main>
 
-    <section class="portada" id="inicio">
+    <!-- Banner principal -->
+
+    <section
+      class="portada"
+      id="inicio"
+    >
 
       <img
         src="banner-alba.png"
-        alt="Alba Design and Sewing"
+        alt="Alba Studio Textil"
         class="logo-principal"
       >
 
-      <a href="#coleccion" class="boton-principal">
+      <a
+        href="#coleccion"
+        class="boton-principal"
+      >
         Ver colección
       </a>
 
     </section>
 
 
-    <section class="coleccion" id="coleccion">
+    <!-- Categorías -->
+
+    <section
+      class="coleccion"
+      id="coleccion"
+    >
 
       <p class="etiqueta-seccion">
-        NUESTRA COLECCIÓN
+        Nuestra colección
       </p>
 
-      <h2 class="titulo-seccion">
+      <h1 class="titulo-seccion">
         Hechos para acompañarte todos los días.
-      </h2>
+      </h1>
 
       <div class="categorias">
 
-        <article class="categoria" id="neceseres">
-         <img src="img/neceser1.png" alt="Neceseres Alba">
-          <h3>Neceseres</h3>
+        <!-- Neceseres -->
+
+        <article class="categoria">
+
+          <a href="neceseres.html" class="imagen-categoria">
+
+            <img
+              src="img/neceser1.png"
+              alt="Neceseres Alba"
+            >
+
+          </a>
+
+          <h2>Neceseres</h2>
 
           <p>
             Diseños funcionales para organizar tus esenciales
             y acompañarte en cada momento.
           </p>
 
-         <a href="neceseres.html">Ver todo →</a>
+          <a
+            href="neceseres.html"
+            class="enlace-categoria"
+          >
+            Ver todo →
+          </a>
+
         </article>
 
 
-        <article class="categoria" id="scrunchies">
-          <img src="img/scrunchies1.png" alt="Scrunchies Alba">
-          <h3>Scrunchies</h3>
+        <!-- Scrunchies -->
+
+        <article class="categoria">
+
+          <a href="scrunchies.html" class="imagen-categoria">
+
+            <img
+              src="img/scrunchies1.png"
+              alt="Scrunchies Alba"
+            >
+
+          </a>
+
+          <h2>Scrunchies</h2>
 
           <p>
             Maxi scrunchies confeccionados para complementar
             tu look con un detalle especial.
           </p>
 
-          <a href="#">
+          <a
+            href="scrunchies.html"
+            class="enlace-categoria"
+          >
             Ver todo →
           </a>
+
         </article>
 
 
-       <article class="categoria" id="complementos">
-           <img src="img/accesorios1.png" alt="Accesorios Alba">
-          <h3>Complementos</h3>
+        <!-- Complementos -->
+
+        <article class="categoria">
+
+          <a href="accesorios.html" class="imagen-categoria">
+
+            <img
+              src="img/accesorios1.png"
+              alt="Accesorios Alba"
+            >
+
+          </a>
+
+          <h2>Complementos</h2>
 
           <p>
             Pequeños esenciales hechos con dedicación
             para complementar tu día.
           </p>
 
-          <a href="#">
+          <a
+            href="accesorios.html"
+            class="enlace-categoria"
+          >
             Ver todo →
           </a>
+
         </article>
 
       </div>
@@ -156,156 +242,242 @@
     </section>
 
 
+    <!-- Beneficios -->
+
     <section class="beneficios">
 
-      <div class="beneficio">
+      <article class="beneficio">
+
         <span>🚚</span>
 
-        <h4>Envíos a todo Chile</h4>
+        <h3>Envíos a todo Chile</h3>
 
         <p>
           Recibe tu pedido estés donde estés.
         </p>
-      </div>
+
+      </article>
 
 
-      <div class="beneficio">
+      <article class="beneficio">
+
         <span>♡</span>
 
-        <h4>Hecho con dedicación</h4>
+        <h3>Hecho con dedicación</h3>
 
         <p>
           Cada pieza está diseñada y confeccionada por mí.
         </p>
-      </div>
+
+      </article>
 
 
-      <div class="beneficio">
+      <article class="beneficio">
+
         <span>✦</span>
 
-        <h4>Diseños especiales</h4>
+        <h3>Diseños especiales</h3>
 
         <p>
           Colecciones textiles pensadas para acompañarte.
         </p>
-      </div>
+
+      </article>
 
 
-      <div class="beneficio">
+      <article class="beneficio">
+
         <span>✉</span>
 
-        <h4>Atención personalizada</h4>
+        <h3>Atención personalizada</h3>
 
         <p>
           Escríbeme y te ayudaré con cualquier consulta.
         </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- Sobre Alba -->
+
+    <section
+      class="sobre-alba"
+      id="sobre-alba"
+    >
+
+      <div class="sobre-contenido">
+
+        <p class="etiqueta-seccion">
+          Sobre Alba
+        </p>
+
+        <h2>
+          Diseño, costura y detalles hechos con dedicación.
+        </h2>
+
+        <p>
+          ¡Hola! Soy Maca, la persona detrás de Alba Studio Textil. ✨
+        </p>
+
+        <p>
+          Creé este pequeño emprendimiento porque siempre he disfrutado
+          transformar telas en accesorios bonitos, prácticos y pensados
+          para acompañarte en tu día a día.
+        </p>
+
+        <p>
+          Cada scrunchie, neceser, funda y accesorio está confeccionado
+          con mucho cariño, cuidando cada detalle para que recibas un
+          producto de calidad, funcional y hecho con dedicación.
+        </p>
+
+        <p>
+          Gracias por estar aquí y por apoyar un emprendimiento hecho con
+          el corazón. Espero que encuentres algo que te encante y que pueda
+          acompañarte por mucho tiempo.
+        </p>
+
+        <p class="firma-maca">
+          Con cariño, Maca 🤍
+        </p>
+
       </div>
 
     </section>
 
 
+    <!-- Contacto -->
+
     <section
-      id="sobre-alba"
-      style="padding:90px 5%; text-align:center; border-top:1px solid #eee;"
+      class="contacto"
+      id="contacto"
     >
 
       <p class="etiqueta-seccion">
-        Sobre Alba
+        Contacto
       </p>
 
-      <h2 class="titulo-seccion">
-        Diseño, costura y detalles hechos con dedicación.
+      <h2>
+        ¿Tienes alguna consulta?
       </h2>
 
-      <p
-        style="
-          max-width:650px;
-          margin:auto;
-          color:#555;
-          line-height:1.8;
-          font-size:15px;
-        "
-      >
-       ¡Hola! Soy Maca, la persona detrás de Alba Studio Textil. ✨
-
-Creé este pequeño emprendimiento porque siempre he disfrutado transformar telas en accesorios bonitos, prácticos y pensados para acompañarte en tu día a día.
-
-Cada scrunchie, neceser, funda y accesorio está confeccionado con mucho cariño, cuidando cada detalle para que recibas un producto de calidad, funcional y hecho con dedicación.
-
-Gracias por estar aquí y por apoyar un emprendimiento hecho con el corazón. Espero que encuentres algo que te encante y que pueda acompañarte por mucho tiempo.
-
-Con cariño,
-
-Maca 🤍
+      <p>
+        Escríbeme para conocer los modelos disponibles,
+        medidas, colores y opciones de envío.
       </p>
+
+      <div class="botones-contacto">
+
+        <a
+          class="boton-contacto"
+          href="https://wa.me/56994187887"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          class="boton-contacto"
+          href="https://www.instagram.com/alba_studiotextil"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+      </div>
 
     </section>
 
   </main>
 
 
-  <footer
-    id="contacto"
-    style="
-      padding:50px 5%;
-      text-align:center;
-      border-top:1px solid #eee;
-    "
-  >
+  <!-- Pie de página -->
 
-    <p style="font-weight:700; letter-spacing:4px; margin-bottom:18px;">
-      ALBA
+  <footer class="pie-pagina">
+
+    <p>
+      ALBA · Studio Textil
     </p>
 
-    <a
-      href="https://www.instagram.com/alba_studiotextil"
-      target="_blank"
-      rel="noopener noreferrer"
-      style="font-size:14px;"
-    >
-      Instagram · @alba_studiotextil
-    </a>
-
-    <p style="margin-top:20px; color:#777; font-size:12px;">
+    <p>
       © 2026 Alba Studio Textil
     </p>
 
   </footer>
-<script>
 
-  const abrirMenuProductos =
-    document.getElementById("abrir-menu-productos");
 
-  const cerrarMenuProductos =
-    document.getElementById("cerrar-menu-productos");
+  <!-- Funcionamiento del menú lateral -->
 
-  const menuProductos =
-    document.getElementById("menu-productos");
+  <script>
 
-  const fondoMenuProductos =
-    document.getElementById("fondo-menu-productos");
+    const abrirMenuProductos =
+      document.getElementById("abrir-menu-productos");
 
-  const enlacesProductos =
-    document.querySelectorAll(".menu-productos-enlaces a");
+    const cerrarMenuProductos =
+      document.getElementById("cerrar-menu-productos");
 
-  function abrirMenu() {
-    menuProductos.classList.add("activo");
-    fondoMenuProductos.classList.add("activo");
-  }
+    const menuProductos =
+      document.getElementById("menu-productos");
 
-  function cerrarMenu() {
-    menuProductos.classList.remove("activo");
-    fondoMenuProductos.classList.remove("activo");
-  }
+    const fondoMenuProductos =
+      document.getElementById("fondo-menu-productos");
 
-  abrirMenuProductos.addEventListener("click", abrirMenu);
-  cerrarMenuProductos.addEventListener("click", cerrarMenu);
-  fondoMenuProductos.addEventListener("click", cerrarMenu);
 
-  enlacesProductos.forEach(function(enlace) {
-    enlace.addEventListener("click", cerrarMenu);
-  });
+    function abrirMenu() {
 
-</script>
+      menuProductos.classList.add("activo");
+
+      fondoMenuProductos.classList.add("activo");
+
+    }
+
+
+    function cerrarMenu() {
+
+      menuProductos.classList.remove("activo");
+
+      fondoMenuProductos.classList.remove("activo");
+
+    }
+
+
+    abrirMenuProductos.addEventListener(
+      "click",
+      abrirMenu
+    );
+
+
+    cerrarMenuProductos.addEventListener(
+      "click",
+      cerrarMenu
+    );
+
+
+    fondoMenuProductos.addEventListener(
+      "click",
+      cerrarMenu
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      function(evento) {
+
+        if (evento.key === "Escape") {
+
+          cerrarMenu();
+
+        }
+
+      }
+    );
+
+  </script>
+
 </body>
+
 </html>
